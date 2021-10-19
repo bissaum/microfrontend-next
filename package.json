@@ -1,0 +1,25 @@
+{
+  "name": "microfrontend-next",
+  "version": "0.0.1",
+  "description": "Partial NextJS for Microfrontend",
+  "main": "index.js",
+  "repository": "https://github.com/bissaum/microfrontend-next.git",
+  "author": "Bissaum <bissaum@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "11.1.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "eslint": "8.0.1",
+    "eslint-config-next": "11.1.2"
+  }
+}
