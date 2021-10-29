@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Image from "next/image";
 
 import angularSvg from "../assets/angular.svg";
@@ -8,6 +9,8 @@ import reactSvg from "../assets/react.svg";
 import vueSvg from "../assets/vue.svg";
 
 export default function Home() {
+  const [valor, setValor] = useState('NextJS');
+
   return (
     <div className="container">
       <div className="row align-items-center justify-content-center">
@@ -71,10 +74,11 @@ export default function Home() {
             id="inputNextJS"
             className="form-control"
             aria-describedby="hintNextJS"
+            onChange={(e) => setValor(e.target.value)}
           />
         </div>
         <div className="col-auto">
-          <span id="hintNextJS" className="form-text"> NextJS </span>
+          <span id="hintNextJS" className="form-text"> {valor} </span>
         </div>
       </div>
 
